@@ -22,6 +22,7 @@ class ApplicationTest extends NsTest {
 
     @Test
     void 예외_테스트() {
+//        System.out.println("이거 실행되는 시점이 대체 어디야?");
         assertSimpleTest(() ->
                 assertThatThrownBy(() -> runException("1234"))
                         .isInstanceOf(IllegalArgumentException.class)
